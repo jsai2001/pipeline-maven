@@ -1,6 +1,10 @@
 pipeline {
 
     agent any
+
+    environment {
+      PASSWORD = credentials('dockerhub-pass')
+    }
     
     stages {
 
